@@ -163,52 +163,8 @@ class _HomePageState extends State<HomePage> {
             ),
             Tab(
               text: apptitle4.tr,
-              // text: '문장',
+              // text: '코멘트',
               // icon: Icon(Icons.feed_outlined),
-            ),
-            Tab(
-              text: '아코디언',
-              // icon: Icon(Icons.dynamic_feed),
-            ),
-            Tab(
-              text: 'Ai',
-              // icon: Icon(Icons.dynamic_form_sharp),
-            ),
-            Tab(
-              text: '디지털트윈',
-              // icon: Icon(Icons.dynamic_form_sharp),
-            ),
-            Tab(
-              text: '웹뷰',
-              // icon: Icon(Icons.dynamic_form_sharp),
-            ),
-            Tab(
-              text: '웹뷰1',
-              // icon: Icon(Icons.dynamic_form_sharp),
-            ),
-            Tab(
-              text: '유투브언어',
-              // icon: Icon(Icons.favorite_border),
-            ),
-            Tab(
-              text: '유투브',
-              // icon: Icon(Icons.favorite_border),
-            ),
-            Tab(
-              text: '유투브크리에이터',
-              // icon: Icon(Icons.favorite_border),
-            ),
-            Tab(
-              text: '오픈파일',
-              // icon: Icon(Icons.favorite_border),
-            ),
-            Tab(
-              text: 'Comic',
-              // icon: Icon(Icons.favorite_border),
-            ),
-            Tab(
-              text: 'Sort',
-              // icon: Icon(Icons.favorite_border),
             ),
           ],
           children: [
@@ -218,18 +174,6 @@ class _HomePageState extends State<HomePage> {
             // PageScroll(),
             FirstScreenPh(),
             FirstScreenMd82(),
-            FirstScreenAd(),
-            FirstScreenAi(),
-            FirstScreenDt(),
-            FirstScreenWb(),
-            FirstScreenWb1(),
-            // const BarMenu(),
-            FirstScreenYtLan(),
-            FirstScreenYt(),
-            FirstScreenYtCre(),
-            OpenPage(),
-            FirstScreenCm(),
-            SortablePage(),
           ],
         ),
         // bottomNavigationBar: BottomNavigationBar(

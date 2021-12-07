@@ -110,8 +110,8 @@ class TabBarWidget extends StatelessWidget {
     Get.updateLocale(locale);
   }
 
-  final user = FirebaseAuth.instance.currentUser ?? "";
-  final user1 = FirebaseAuth.instance.currentUser!;
+  // final user = FirebaseAuth.instance.currentUser ?? "";
+  // final user1 = FirebaseAuth.instance.currentUser!;
 
   LangController c = Get.put(LangController());
 
@@ -154,10 +154,10 @@ class TabBarWidget extends StatelessWidget {
                   SizedBox(
                     width: 7,
                   ),
-                  CircleAvatar(
-                    radius: 17,
-                    backgroundImage: NetworkImage(user1.photoURL!),
-                  )
+                  // CircleAvatar(
+                  //   radius: 17,
+                  //   backgroundImage: NetworkImage(user1.photoURL!),
+                  // )
                 ],
                 title: Text(
                   title,
