@@ -1,5 +1,4 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -9,7 +8,6 @@ import 'dart:async';
 import 'package:todaylang/page/translation/langtranslate.dart';
 import 'package:todaylang/widget/homepage.dart';
 
-import 'controllers/phrase_loader.dart';
 import 'widget/google_signin_prov.dart';
 import 'widget/logged_in_widget.dart';
 import 'widget/sign_up_widget.dart';
