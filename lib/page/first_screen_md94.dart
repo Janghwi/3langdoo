@@ -890,15 +890,19 @@ class _SecondmenuPageState extends State<SecondmenuPage> {
             mainAxisSize: MainAxisSize.min,
             children: [
               Container(
-                width: 100,
-                height: 100,
-                padding: EdgeInsets.all(16),
-                child: CachedNetworkImage(
-                  imageUrl: _records[index]['fields']['Attachments'][0]
-                      ['thumbnails']['large']['url'],
-                  fit: BoxFit.cover,
-                ),
-              ),
+                  width: 100,
+                  height: 100,
+                  padding: EdgeInsets.all(16),
+                  child: Text(
+                    _records[index]['fields']['emoji'].toString(),
+                    style: TextStyle(fontSize: 50),
+                  )
+                  // CachedNetworkImage(
+                  //   imageUrl: _records[index]['fields']['Attachments'][0]
+                  //       ['thumbnails']['large']['url'],
+                  //   fit: BoxFit.cover,
+                  // ),
+                  ),
               SizedBox(
                 width: 12,
               ),
@@ -1414,8 +1418,11 @@ class _DetailPageState extends State<DetailPage> {
                                         leading: GestureDetector(
                                           onTap: () => phraseSpeech('en-US',
                                               _records[index]['fields']['eng']),
-                                          child: Icon(Icons.volume_up_outlined,
-                                              color: Colors.black),
+                                          child: Text(_records[index]['fields']
+                                                  ['emoji']
+                                              .toString()),
+                                          // child: Icon(Icons.volume_up_outlined,
+                                          // color: Colors.black),
                                         ),
                                         trailing: Text(
                                           'us',
@@ -1451,8 +1458,9 @@ class _DetailPageState extends State<DetailPage> {
                                         leading: GestureDetector(
                                           onTap: () => phraseSpeech('ko-KR',
                                               _records[index]['fields']['kor']),
-                                          child: Icon(Icons.volume_up_outlined,
-                                              color: Colors.black),
+                                          child: Text(_records[index]['fields']
+                                                  ['emoji']
+                                              .toString()),
                                         ),
                                         trailing: Text(
                                           'kr',
@@ -1500,8 +1508,9 @@ class _DetailPageState extends State<DetailPage> {
                                         leading: GestureDetector(
                                           onTap: () => phraseSpeech('ja-JP',
                                               _records[index]['fields']['jap']),
-                                          child: Icon(Icons.volume_up_outlined,
-                                              color: Colors.black),
+                                          child: Text(_records[index]['fields']
+                                                  ['emoji']
+                                              .toString()),
                                         ),
                                         trailing: Text(
                                           'jp',
