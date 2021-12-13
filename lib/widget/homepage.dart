@@ -38,7 +38,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final String title = "ENKORNESE";
+  final String title = "3LangDoo";
 
   // final List<Map<String, dynamic>> locales = [
   //   {'name': 'English', 'locale': (Locale('en', 'US'))},

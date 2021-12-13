@@ -56,6 +56,7 @@ class TabBarWidget extends StatelessWidget {
   final controller = Get.put(LangController());
 
   showLocalDialog(BuildContext context) {
+    //** 언어 선택하는 다이얼로그 */
     showDialog(
         context: context,
         builder: (_) => AlertDialog(
@@ -167,7 +168,7 @@ class TabBarWidget extends StatelessWidget {
                       // backgroundColor: Colors.white70,
                       fontStyle: FontStyle.normal,
                       color: Colors.yellow,
-                      fontSize: 24,
+                      fontSize: 32,
                       fontWeight: FontWeight.bold),
                 ),
                 gradient: LinearGradient(
@@ -177,7 +178,7 @@ class TabBarWidget extends StatelessWidget {
                   isScrollable: true,
                   indicatorColor: Colors.yellowAccent,
                   indicator: BubbleTabIndicator(
-                    indicatorHeight: 25.0,
+                    indicatorHeight: 35.0,
                     indicatorColor: Colors.white,
                     tabBarIndicatorSize: TabBarIndicatorSize.tab,
                   ),
